@@ -3,9 +3,9 @@
 namespace App\CrossPlatform;
 
 use App\CrossPlatform\Platfom\Platfom;
-use App\Factory\HtmlDialog;
-use App\Factory\LinuxDialog;
-use App\Factory\WindowsDialog;
+use App\DialogFactory\HtmlDialog;
+use App\DialogFactory\LinuxDialog;
+use App\DialogFactory\WindowsDialog;
 
 class CPButton implements Button
 {

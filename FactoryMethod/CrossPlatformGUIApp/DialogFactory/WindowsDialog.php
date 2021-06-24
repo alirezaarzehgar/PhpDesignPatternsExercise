@@ -1,6 +1,6 @@
 <?php 
 
-namespace App\Factory;
+namespace App\DialogFactory;
 
 use App\Button\ButtonInterface;
 use App\Button\WindowsButton;
