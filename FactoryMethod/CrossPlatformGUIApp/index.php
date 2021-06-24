@@ -1,10 +1,10 @@
 <?php
 
-use App\CrossPlatform\Button;
+use App\CrossPlatform\CPButton;
 use App\CrossPlatform\Platfom\Linux;
 
 require __DIR__ . '/vendor/autoload.php';
 
-$btn = Button::create(new Linux());
+$btn = CPButton::create(new Linux());
 
 $btn->renderWindow();
