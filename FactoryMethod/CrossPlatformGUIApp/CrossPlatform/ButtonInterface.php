@@ -2,9 +2,9 @@
 
 namespace App\CrossPlatform;
 
-use App\CrossPlatform\OS\OSInterface;
+use App\CrossPlatform\Platfom\PlatfomInterface;
 
 interface ButtonInterface
 {
-    static public function create(OSInterface $os);
+    static public function create(PlatfomInterface $os);
 }

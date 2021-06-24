@@ -1,10 +1,7 @@
 <?php
 
 use App\CrossPlatform\Button;
-use App\CrossPlatform\OS;
-use App\CrossPlatform\OS\Linux;
-use App\CrossPlatform\OS\Web;
-use App\CrossPlatform\OS\Windows;
+use App\CrossPlatform\Platfom\Web;
 
 require __DIR__ . '/vendor/autoload.php';
 

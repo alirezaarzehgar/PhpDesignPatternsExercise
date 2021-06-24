@@ -2,8 +2,8 @@
 
 namespace App\CrossPlatform;
 
-use App\CrossPlatform\OS\OS;
-use App\CrossPlatform\OS\OSInterface;
+use App\CrossPlatform\Platfom\Platfom;
+use App\CrossPlatform\Platfom\PlatfomInterface;
 use App\Factory\Dialog;
 use App\Factory\HtmlDialog;
 use App\Factory\LinuxDialog;
@@ -11,14 +11,14 @@ use App\Factory\WindowsDialog;
 
 class Button implements ButtonInterface
 {
-    static public function create(OSInterface $os)
+    static public function create(PlatfomInterface $platform)
     {
-        return match($os->getName()) {
-            OS::LINUX => new LinuxDialog(),
+        return match($platform->getName()) {
+            Platfom::LINUX => new LinuxDialog(),
 
-            OS::WINDOWS => new WindowsDialog(),
+            Platfom::WINDOWS => new WindowsDialog(),
 
-            OS::WEB => new HtmlDialog(),
+            Platfom::WEB => new HtmlDialog(),
 
             default => new UnknowOS(),
         };
