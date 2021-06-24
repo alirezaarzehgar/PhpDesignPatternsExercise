@@ -11,7 +11,7 @@ use App\Factory\WindowsDialog;
 
 class Button implements ButtonInterface
 {
-    static public function create(PlatfomInterface $platform)
+    static public function create(Platfom $platform)
     {
         return match($platform->getName()) {
             Platfom::LINUX => new LinuxDialog(),
