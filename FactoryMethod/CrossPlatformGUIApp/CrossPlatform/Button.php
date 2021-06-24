@@ -3,8 +3,6 @@
 namespace App\CrossPlatform;
 
 use App\CrossPlatform\Platfom\Platfom;
-use App\CrossPlatform\Platfom\PlatfomInterface;
-use App\Factory\Dialog;
 use App\Factory\HtmlDialog;
 use App\Factory\LinuxDialog;
 use App\Factory\WindowsDialog;

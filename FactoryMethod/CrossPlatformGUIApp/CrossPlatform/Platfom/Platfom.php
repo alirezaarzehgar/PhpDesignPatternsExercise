@@ -2,7 +2,7 @@
 
 namespace App\CrossPlatform\Platfom;
 
-abstract class Platfom implements PlatfomInterface
+abstract class Platfom
 {
     protected string $platform;
 
